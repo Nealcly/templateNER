@@ -2,6 +2,12 @@
 Source Code For
  [Template-Based Named Entity Recognition Using BART](https://aclanthology.org/2021.findings-acl.161.pdf)
 
+# Training
+
+Training ```train.py```
+
+Inference ```inference.py```
+
 # Corpus
 
 ATIS (https://github.com/yvchen/JointSLU/tree/master/data)
