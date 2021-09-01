@@ -30,7 +30,7 @@ def template_entity(words, input_TXT, start):
     output_length_list = [0]*5*words_length
 
 
-    for i in range(4):
+    for i in range(len(temp_list)//5):
         base_length = ((tokenizer(temp_list[i * 5], return_tensors='pt', padding=True, truncation=True)['input_ids']).shape)[1] - 4
         output_length_list[i*5:i*5+ 5] = [base_length]*5
         output_length_list[i*5+4] += 1
