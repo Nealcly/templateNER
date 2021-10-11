@@ -27,7 +27,8 @@ model_args = {
     "max_length": 25,
     "manual_seed": 4,
     "save_steps": 11898,
-    "gradient_accumulation_steps": 1
+    "gradient_accumulation_steps": 1,
+    "output_dir": "./exp/template",
 }
 
 # Initialize model
@@ -35,7 +36,7 @@ model = Seq2SeqModel(
     encoder_decoder_type="bart",
     encoder_decoder_name="facebook/bart-large",
     args=model_args,
-    use_cuda=False,
+    # use_cuda=False,
 )
 
 
