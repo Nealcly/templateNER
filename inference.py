@@ -61,7 +61,7 @@ def prediction(input_TXT):
     entity_list = []
     for i in range(len(input_TXT_list)):
         words = []
-        for j in range(1, 9):
+        for j in range(1, min(9, len(input_TXT_list) - i + 1)):
             word = (' ').join(input_TXT_list[i:i+j])
             words.append(word)
 
